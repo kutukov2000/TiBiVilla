@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Galerry</title>
+    <title>Галерея</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/galery.css">
     <script src="../script/jQuery.js"></script>
@@ -20,16 +21,16 @@
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li>
-                            <a href="../index.html" class="header__link">Головна</a>
+                            <a href="../index.html" class="header__link lang"  key="головна">Головна</a>
                         </li>
                         <li>
-                            <a href="servic.html" class="header__link">Сервіс</a>
+                            <a href="servic.html" class="header__link lang"  key="сервіс">Сервіс</a>
                         </li>
                         <li>
-                            <a href="galerry.html" class="header__link"  id="now">Галерея</a>
+                            <a href="galerry.html" class="header__link lang"  id="now" key='галерея'>Галерея</a>
                         </li>
                         <li>
-                            <a href="infrastructura.html" class="header__link">Інфраструктура</a>
+                            <a href="infrastructura.html" class="header__link lang" key='інфраструктура'>Інфраструктура</a>
                         </li>
                         <li class="contact_">
                             <hr noshade class="header__hr2">
@@ -72,40 +73,43 @@
         <nav class="header__menu bottom">
             <ul class="header__list bottom">
                 <li>
-                    <a href="../index.html" class="header__link">Головна</a>
+                    <a href="../index.html" class="header__link lang" id="now" key="головна">Головна</a>
                 </li>
                 <li>
-                    <a href="galerry.html" class="header__link"  id="now">Галерея</a>
+                    <a href="servic.html" class="header__link lang" key="сервіс">Сервіс</a>
                 </li>
                 <li>
-                    <a href="servic.html" class="header__link">Сервіс</a>
+                    <a href="galerry.html" class="header__link lang" key='галерея'>Галерея</a>
                 </li>
                 <li>
-                    <a href="infrastructura.html" class="header__link">Інфраструктура</a>
+                    <a href="infrastructura.html" class="header__link lang" key='інфраструктура'>Інфраструктура</a>
                 </li>
 
             </ul>
         </nav>
     </div>
 
-
-<div class="container galerry__container">
-    
-    <hr noshade>
-    <p class="text_gelery lang" key="фото_будівництво">Фото з будівництва</p>
-    <hr noshade>
-    <div class="galery">
-        <img src="../images/wrap_img.jpg" alt="">
-        <img src="../images/wrap_img.jpg" alt="">
-        <img src="../images/wrap_img.jpg" alt="">
-        <img src="../images/wrap_img.jpg" alt="">
-        <img src="../images/wrap_img.jpg" alt="">
-        <img src="../images/wrap_img.jpg" alt="">
-        <img src="../images/wrap_img.jpg" alt="">
-        <img src="../images/wrap_img.jpg" alt="">
-        
+<div class="container content_container">
+    <div class="servic__content">
+        <div class="servic__text">
+            <hr noshade>
+        <p class="text_gelery lang" key="фото_будівництво">Фото з будівництва</p>
+        <hr noshade>
+        </div>
+        <div class="galery" id="galery2">
+            <img src="../images/wrap_img.jpg" alt="">
+            <img src="../images/wrap_img.jpg" alt="">
+            <img src="../images/wrap_img.jpg" alt="">
+            <img src="../images/wrap_img.jpg" alt="">
+            <img src="../images/wrap_img.jpg" alt="">
+            <img src="../images/wrap_img.jpg" alt="">
+            <img src="../images/wrap_img.jpg" alt="">
+            <img src="../images/wrap_img.jpg" alt="">
+            
+        </div>
     </div>
 </div>
+    
 
 
 
@@ -128,5 +132,6 @@
         </div>
     </div>
 </footer> 
+<script src="../script/ararat.js"></script>
 </body>
 </html>

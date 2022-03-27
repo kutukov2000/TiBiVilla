@@ -9,10 +9,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: Yanone;
     width: 100%;
     position: relative;
+
+    font-size: 20px;
 }
 
 .our img {
@@ -82,14 +85,15 @@
     transform: scale(0.9);
     display: flex;
     flex-direction: column;
+ 
     margin: 0;
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
 .hr6 {
-    background: #FFC984;
+    background:  ;
     color: #FFC984;
     border: none;
     width: 100%;
@@ -174,8 +178,7 @@
     color: white;
     padding: 0;
     overflow: hidden;
-    padding-bottom: 58%;
-    ;
+
 }
 
 .centered {
@@ -189,16 +192,17 @@
 .z372_house {
     display: flex;
     flex-direction: row;
-    width: 1500px;
+    width:  100%;
 }
 
 .z372_house_img {
-    width: 75%;
+    width: 70%;
 }
 
-.z372_house_img img {
+.mySlides img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .z372_house_name {
@@ -214,7 +218,7 @@
     padding: 0 50px;
     background-color: #212F3D;
     color: white;
-    width: 25%;
+    width: 30%;
 }
 
 .description3 p {
@@ -257,11 +261,13 @@
 }
 
 .z372_house_plan {
+    width: 100%;
+    background-color: #fff;
     padding: 50px 200px;
-    width: 1500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items:center;
 }
 
 .z372_house_plan_imgdiv {
@@ -272,6 +278,9 @@
 .z372_house_img_plan {
     width: 65%;
     margin-right: 35px;
+}
+.z1511{
+    width: 100%;
 }
 
 .z372_house_img_plan_description {
@@ -286,17 +295,87 @@
 
 .z372_house_img_plan_description p {
     white-space: nowrap;
+    font-size: calc(28px + 16 * ((100vw - 320px) / (1500 - 320)));;
 }
 
 .description_span {
     font-family: Oswald;
     font-style: normal;
     font-weight: 900;
-    font-size: 30px;
+    font-size: calc(23px + 16 * ((100vw - 630px) / (1500 - 632)));
     letter-spacing: 0.05em;
     color: #000000;
 }
+.description.displays{
+    display: none;
+}
+.second__description{
+    display: none;
+}
 
+
+@media(max-width:1219px){
+  .description3{
+      padding: 0 10px 0 15px;
+  }
+}
+@media(max-width:1024px){
+    .big_description{
+        margin-top: 0;
+    }
+    .z372_house_name {
+        margin-bottom: 0;
+    }
+    .z372_house_img_plan{
+        width:100%;
+    }
+
+}
+@media(max-width:1024px){
+    .z372_house_plan{
+        padding: 25px 100px;
+    }
+}
+@media(max-width:868px){
+    .z372_house_plan{
+        padding: 25px 50px;
+    }
+}
+@media(max-width:802px){
+    .z372_house_plan{
+        padding-left: 10px;
+    }
+}
+@media(max-width:968px){
+    .z372_house{
+        flex-direction: column;
+    }
+    .z372_house_img {
+        width: 100%;
+    }
+    .description3{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .square_div{
+        display: none;
+    }
+    .name__div{
+        display: none;
+    }
+    .description.displays{
+        display: flex;
+    }
+    .second__description{
+        display: flex;
+    }
+    .big_description{
+        margin-bottom: 15px;
+    }
+    .p2{
+        font-size: calc(25px + 16 * ((100vw - 320px) / (1500 - 320)));
+    }
+}
 @media(max-width:767px) {
     .our {
         flex-direction: column;
@@ -310,5 +389,50 @@
     }
     #our2 {
         margin: 25px 0;
+    }
+}
+@media(max-width:741px){
+    .z372_house_plan{
+        flex-direction: column-reverse;
+        padding-right: 0;
+    }
+    .z372_house_plan_imgdiv{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .z372_house_img_plan{
+        width: 50%;
+    }
+    #z151__id{
+        width:100%;
+    }
+    .z372_house_img_plan_description{
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+@media(max-width:350px){
+    .description3{
+        flex-direction: column;
+    }
+    .square_div{
+        display: block;
+    }
+    .name__div{
+        display: block;
+    }
+    .second__description{
+        display: none;
+    }
+    .z372_house_name{
+        margin-top: 10px;
+    }
+    .square_div p{
+        margin:0;
+    }
+    .big_description{
+        margin-top: 15px;
     }
 }

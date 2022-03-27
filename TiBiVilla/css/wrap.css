@@ -4,17 +4,28 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	
+}
+.post-wrap ul {
+	padding-left: 7%;
 }
 .post-item {
-	padding: 15px;	
+	margin: 15px;	
+	margin-top: 96px;
+	
 	cursor: pointer;
+	height: 250px;
 }
 .post-item * {
 	transition: .3s linear;
 }
 .item-content {
 	background: #212F3D;
-    padding: 40px;
+
+	padding-bottom: 0;
+	padding:40px;
+	height: 100%;
+	margin-bottom: 150px;
 }
 .item-icon {
 	margin-bottom: 20px;

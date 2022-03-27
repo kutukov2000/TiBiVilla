@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Galerry</title>
+    <title>Інфраструктура</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/katalog.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/galery.css">
     <script src="../script/jQuery.js"></script>
 </head>
+
 <body style=" background-color: black;">
     <header class="header">
         <div class="container" style="padding-top: 5px;
                                       padding-bottom: 5px;">
             <div class="header__body">
-                <a href="index.html" class="header__logo">
+                <a href="../index.html" class="header__logo">
                     <img src="../images/logo.png" alt="">
                 </a>
 
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li>
-                            <a href="../index.html" class="header__link">Головна</a>
+                            <a href="../index.html" class="header__link lang" key="головна">Головна</a>
                         </li>
                         <li>
-                            <a href="servic.html" class="header__link">Сервіс</a>
+                            <a href="servic.html" class="header__link lang" key="сервіс">Сервіс</a>
                         </li>
                         <li>
-                            <a href="galerry.html" class="header__link">Галерея</a>
+                            <a href="galerry.html" class="header__link lang" key='галерея'>Галерея</a>
                         </li>
                         <li>
-                            <a href="infrastructura.html" class="header__link"  id="now">Інфраструктура</a>
+                            <a href="infrastructura.html" class="header__link lang" id="now"
+                                key='інфраструктура'>Інфраструктура</a>
                         </li>
                         <li class="contact_">
                             <hr noshade class="header__hr2">
@@ -72,58 +77,156 @@
         <nav class="header__menu bottom">
             <ul class="header__list bottom">
                 <li>
-                    <a href="../index.html" class="header__link">Головна</a>
+                    <a href="../index.html" class="header__link lang" id="now" key="головна">Головна</a>
                 </li>
                 <li>
-                    <a href="galerry.html" class="header__link">Галерея</a>
+                    <a href="servic.html" class="header__link lang" key="сервіс">Сервіс</a>
                 </li>
                 <li>
-                    <a href="servic.html" class="header__link">Сервіс</a>
+                    <a href="galerry.html" class="header__link lang" key='галерея'>Галерея</a>
                 </li>
                 <li>
-                    <a href="infrastructura.html" class="header__link"   id="now">Інфраструктура</a>
+                    <a href="infrastructura.html" class="header__link lang" key='інфраструктура'>Інфраструктура</a>
                 </li>
 
             </ul>
         </nav>
     </div>
+    <div class="container">
+        <div class="servic__content">
+            <div class="servic__text">
+                <hr noshade>
+                <p class="text_gelery lang" key="інф">ІНФРАСТРУКТУРА</p>
+                <hr noshade>
+            </div>
+            <div class="wrap__2">
 
-    <hr noshade>
-    <p class="text_gelery lang" key="фото_будівництво">Фото з будівництва</p>
-    <hr noshade>
+                <!-- Дитячий садок -->
+                <div class="wrap__div">
+                    <img class="clip_path_img_1 image_zoom" src="../images/infrastructura/dit_sad.png" alt="">
+                    <img class="clip_path_img_2 image_zoom" id="sadoc" src="../images/infrastructura/britannicaKids.jpg"
+                        alt="">
+
+                    <div class="infrastructere_text">
+                        <h1 class="lang" key="садок">Дитячий садок</h1>
+                        <p class="lang" key="садок2">
+                            Поблизу нашого містечка є державний дитячий садок (7хв) та приватний "Britannica Kids" (4хв)
+                        </p>
+                    </div>
+                    <div class='length f'>
+                        <p>1500 м</p>
+                    </div>
+                </div>
+
+                <!-- Школа -->
+                <div class="wrap__div">
+                    <img class="clip_path_img_1 image_zoom" src="../images/infrastructura/school.png" alt="">
+                    <img class="clip_path_img_2 image_zoom" src="../images/infrastructura/britannicaSchool.jpg"                        alt="">
+
+                    <div class="infrastructere_text">
+                        <h1 class="lang" key="школа">Школа</h1>
+                        <p class="lang" key="школа2">
+                            Поблизу нашого містечка є державна школа (7хв) та приватний "Britannica School" (4хв)
+                        </p>
+                    </div>
+                    <div class='length f'>
+                        <p>1500 м</p>
+                    </div>
+                </div>
+
+                <!-- Парк -->
+                <div class="wrap__div">
+                    <img src="../images/infrastructura/park.png" alt="">
+
+                    <div class="infrastructere_text without_double_image">
+                        <h1 class="lang" key="парк">Парк</h1>
+                        <p class="lang" key="парк2">
+                            Поблизу ношого містечка є парк ім. Тараса Шевченка(15хв)
+                        </p>
+                    </div>
+                    <div class='length without_double_image'>
+                        <p>4200 м</p>
+                    </div>
+                </div>
+
+                <!-- Природа -->
+                <div class="wrap__div">
+                    <img class="clip_path_img_1 image_zoom" src="../images/infrastructura/ozero.png" alt="">
+                    <img class="clip_path_img_2 image_zoom" id="sadoc" src="../images/infrastructura/forest.png"
+                        alt="">
+
+                    <div class="infrastructere_text">
+                        <h1 class="lang" key="природа">Природа</h1>
+                        <p class="lang" key="природа2">
+                            Поблизу нашого містечка є озеро та ліс
+                        </p>
+                    </div>
+                    <div class='length d'>
+                        <p>4200 м</p>
+                    </div>
+                </div>
+                <div class="wrap__div">
+                    
+                    <img src="../images/infrastructura/club_2.png"
+                        alt="">
+
+                    <div class="infrastructere_text last">
+                        <h1 class="lang" key="фітнес">Фітнес клуб</h1>
+                        <p class="lang" key="фітнес2">
+                            Поблизу нашого містечка є  фітнес клуб "GRAFITGYM" (8хв) 
+                    </div>
+                    <div class='length'>
+                        <p>4100 м</p>
+                    </div>
+                </div>
+                <div class="wrap__div">
+                    <img  src="../images/infrastructura/cafe.jpg" alt="">
+                    
+                    <div class="infrastructere_text last">
+                        <h1 class="lang" key="кафе">Кафе/Ресторан</h1>
+                        <p class="lang" key="кафе2">
+                            Поблизу нашого містечка є  кафе/ресторан "Авангард" (8хв)
+                        </p>
+                    </div>
+                    <div class='length'>
+                        <p>3100 м</p>
+                    </div>
+                </div>
+
+            </div>
 
 
-<div class="galery">
-    <img src="../images/wrap_img.jpg" alt="">
-    <img src="../images/wrap_img.jpg" alt="">
-    <img src="../images/wrap_img.jpg" alt="">
-    <img src="../images/wrap_img.jpg" alt="">
-    <img src="../images/wrap_img.jpg" alt="">
-    <img src="../images/wrap_img.jpg" alt="">
-    <img src="../images/wrap_img.jpg" alt="">
-    <img src="../images/wrap_img.jpg" alt="">
-    
-</div>
 
 
-<footer>
-    <div class="footer">
-        <div class="div-logo">
-            <img src="../images/logo.png" alt="ZHK" class="footer__logo">
-        </div>
-        <div class="mail">
-            <img class="footer__img" src="../images/mail2.png" alt="">
-            <p>tibivilla.tarasivka@gmail.com</p>
-        </div>
-        <div class="contact">
-            <img  class="footer__img" src="../images/phone2.png" alt="">
-            <p>+38 096 248 56 13 </p>
-        </div>
-        <div class="footer__div">
-            <p>tibivilla.tarasivka@gmail.com</p>
-            <p>+38 096 248 56 13</p>
+
+
+
+
         </div>
     </div>
-</footer> 
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="div-logo">
+                <img src="../images/logo.png" alt="ZHK" class="footer__logo">
+            </div>
+            <div class="mail">
+                <img class="footer__img" src="../images/mail2.png" alt="">
+                <p>tibivilla.tarasivka@gmail.com</p>
+            </div>
+            <div class="contact">
+                <img class="footer__img" src="../images/phone2.png" alt="">
+                <p>+38 096 248 56 13 </p>
+            </div>
+            <div class="footer__div">
+                <p>tibivilla.tarasivka@gmail.com</p>
+                <p>+38 096 248 56 13</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/ararat.js"></script>
 </body>
+
 </html>
