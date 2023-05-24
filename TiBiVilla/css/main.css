@@ -114,14 +114,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.header__hr {
-    background-color: #fff;
-    border: none;
-    height: 80px;
-    width: 1px;
-    margin: 0 20px;
+    margin-right: 20px;
 }
 
 .header_contact p {
@@ -130,23 +123,6 @@
     font-size: 18px;
     font-family: 'Oswald';
     letter-spacing: 0.7px;
-}
-
-.language_div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.translate img {
-    width: 40px;
-    height: 25px;
-}
-
-.translate {
-    border: none;
-    background: transparent;
-    padding: 0;
 }
 
 #now {
@@ -224,6 +200,7 @@
     top: 30%;
     text-align: left;
     margin: 20px;
+    padding: 15px;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -639,6 +616,7 @@ footer {
     font-size: calc(16px + 16 * ((100vw - 320px) / (1500 - 320)));
 
 }
+
 @media (min-width:1500px) {
     .max {
         font-size: max(49px);
@@ -650,6 +628,7 @@ footer {
     font-size: max(49px);
    }
 }
+
 @media (max-width:1500px){
     .container{
         max-width:100%;
@@ -730,6 +709,7 @@ footer {
         z-index: 3;
         margin-right: 20px;
         margin-left: 40px;
+        margin-top:15px;
     }
     .header__burger span {
         position: absolute;
@@ -869,13 +849,13 @@ footer {
     .footer__logo{
         max-height: 65px;
         width:100px
-    
     }
     #footer__logo{
         width:100px;
     }
-    
-
+    .header__burger {
+        margin-top: 0;
+    }
 }
 
 @media (max-width:540px) {
@@ -887,11 +867,13 @@ footer {
         height: 350px;
     }
 }
+
 @media(max-width:450px){
     .first__cherga{
         height: 18%;
     }
 }
+
 @media(max-width:400px){
     .hr1{
         width: 200px;
@@ -901,20 +883,9 @@ footer {
 @media (max-width:362px) {
     .header__burger {
         margin-left: 20px;
-    }
-    .translate img {
-        width: 30px;
-        height: 20px;
-    }
-    .header__hr {
-        display: none;
-    }
-    #ru {
-        margin-right: 30px;
+        margin-top: 0;
     }
 }
-
-
 
 @media (max-width:276px) {
     .header__logo {
@@ -923,11 +894,3 @@ footer {
         left: 0;
     }
 }
-
-
-@media(max-width:242px) {
-    #ru {
-        margin-right: 10px;
-    }
-}
-

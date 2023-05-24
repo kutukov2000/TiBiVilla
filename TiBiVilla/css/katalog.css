@@ -93,7 +93,6 @@
 }
 
 .hr6 {
-    background:  ;
     color: #FFC984;
     border: none;
     width: 100%;
@@ -296,9 +295,7 @@
 .z372_house_img_plan_description p {
     white-space: nowrap;
     font-size: calc(28px + 16 * ((100vw - 320px) / (1500 - 320)));;
-}
 
-.description_span {
     font-family: Oswald;
     font-style: normal;
     font-weight: 900;
