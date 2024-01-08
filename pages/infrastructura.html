@@ -9,51 +9,46 @@
     <link rel="stylesheet" href="../css/katalog.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/galery.css">
-
+    <link rel="stylesheet" href="../css/header.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="../script/burger.js"></script>
 </head>
 
 <body style="background-color: black;">
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container" style="padding-top: 5px; padding-bottom: 5px;">
-            <div class="header__body">
-                <a href="../index.html" class="header__logo">
-                    <img src="../images/logo.png" alt="">
-                </a>
-
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li>
-                            <a href="../index.html" class="header__link">Головна</a>
-                        </li>
-                        <li>
-                            <a href="servic.html" class="header__link">Сервіс</a>
-                        </li>
-                        <li>
-                            <a href="galerry.html" class="header__link">Галерея</a>
-                        </li>
-                        <li>
-                            <a href="infrastructura.html" class="header__link" id="now">Інфраструктура</a>
-                        </li>
-                        <li class="contact_">
-                            <hr noshade class="header__hr2">
-                            <p class="header__link header__p">+38 096 248 56 13</p>
-                            <p class="header__link">tibivilla.tarasivka@gmail.com</p>
-                        </li>
-
-                    </ul>
-                </nav>
-                <div class="header___">
-                    <div class="header_contact">
-                        <p>+38 096 248 56 13 </p>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="header__logo">
+                <img src="../images/logo.png" alt="">
+            </a>
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="servic.html">Сервіс</a>
+                    </li>
+                    <li>
+                        <a href="galerry.html">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="infrastructura.html" id="now">Інфраструктура</a>
+                    </li>
+                    <li class="contact_in_burger">
+                        <hr noshade>
+                        <p class="phone_number_in_burber">+38 096 248 56 13</p>
                         <p>tibivilla.tarasivka@gmail.com</p>
-                    </div>
-                    <div class="header__burger">
-                        <span></span>
-                    </div>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <div class="header_contact">
+                    <p>+38 096 248 56 13 </p>
+                    <p>tibivilla.tarasivka@gmail.com</p>
+                </div>
+                <div class="burger">
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -61,20 +56,19 @@
 
     <div class="container" style="padding:0">
         <nav class="header__menu bottom">
-            <ul class="header__list bottom">
+            <ul>
                 <li>
-                    <a href="../index.html" class="header__link">Головна</a>
+                    <a href="../index.html">Головна</a>
                 </li>
                 <li>
-                    <a href="servic.html" class="header__link">Сервіс</a>
+                    <a href="servic.html">Сервіс</a>
                 </li>
                 <li>
-                    <a href="galerry.html" class="header__link">Галерея</a>
+                    <a href="galerry.html">Галерея</a>
                 </li>
                 <li>
-                    <a href="infrastructura.html" class="header__link" id="now">Інфраструктура</a>
+                    <a href="infrastructura.html" id="now">Інфраструктура</a>
                 </li>
-
             </ul>
         </nav>
     </div>
@@ -90,11 +84,13 @@
                 <!-- Дитячий садок -->
                 <div class="wrap__div">
                     <img class="clip_path_img_1 image_zoom" src="../images/infrastructura/dit_sad.png" alt="">
-                    <img class="clip_path_img_2 image_zoom" id="sadoc" src="../images/infrastructura/britannicaKids.jpg" alt="">
+                    <img class="clip_path_img_2 image_zoom" id="sadoc" src="../images/infrastructura/britannicaKids.jpg"
+                        alt="">
 
                     <div class="infrastructere_text">
                         <h1>Дитячий садок</h1>
-                        <p>Поблизу нашого містечка є державний дитячий садок (7хв) та приватний "Britannica Kids" (4хв)</p>
+                        <p>Поблизу нашого містечка є державний дитячий садок (7хв) та приватний "Britannica Kids" (4хв)
+                        </p>
                     </div>
                     <div class='length f'>
                         <p>1500 м</p>
@@ -104,7 +100,7 @@
                 <!-- Школа -->
                 <div class="wrap__div">
                     <img class="clip_path_img_1 image_zoom" src="../images/infrastructura/school.png" alt="">
-                    <img class="clip_path_img_2 image_zoom" src="../images/infrastructura/britannicaSchool.jpg"                        alt="">
+                    <img class="clip_path_img_2 image_zoom" src="../images/infrastructura/britannicaSchool.jpg" alt="">
 
                     <div class="infrastructere_text">
                         <h1>Школа</h1>
@@ -146,18 +142,18 @@
 
                     <div class="infrastructere_text last">
                         <h1>Фітнес клуб</h1>
-                        <p>Поблизу нашого містечка є  фітнес клуб "GRAFITGYM" (8хв)</p> 
+                        <p>Поблизу нашого містечка є фітнес клуб "GRAFITGYM" (8хв)</p>
                     </div>
                     <div class='length'>
                         <p>4100 м</p>
                     </div>
                 </div>
                 <div class="wrap__div">
-                    <img  src="../images/infrastructura/cafe.jpg" alt="">
+                    <img src="../images/infrastructura/cafe.jpg" alt="">
 
                     <div class="infrastructere_text last">
                         <h1>Кафе/Ресторан</h1>
-                        <p>Поблизу нашого містечка є  кафе/ресторан "Авангард" (8хв)</p>
+                        <p>Поблизу нашого містечка є кафе/ресторан "Авангард" (8хв)</p>
                     </div>
                     <div class='length'>
                         <p>3100 м</p>
