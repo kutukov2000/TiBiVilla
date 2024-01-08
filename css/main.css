@@ -22,63 +22,46 @@
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
-.content {
+main {
     max-width: 1500px;
     width: 100%;
-    margin-top: 110px;
     margin: auto;
+    margin-top: 110px;
     position: absolute;
     left: 0;
     right: 0;
 }
 
 .big_picture_div {
-    margin-top: 110px;
+    background-image: url(../images/z372.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+
     height: 450px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.big_picture {
-    margin-top: 110px;
-    max-height: 450px;
-    width: 100%;
-    max-width: 1500px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-}
-
-.cherga {
-    font-size: 75px;
-    color: white;
-    -webkit-text-stroke: 0.3px black;
-    font-weight: bold;
-    text-shadow: 1px 1px 1.5px #333e51;
-    align-self: center;
-    position: relative;
-    text-align: center;
-}
-
-.cherga_p {
-    font-size: calc(30px + 16 * ((100vw - 320px) / (1580 - 320)));
-    color: GAINSBORO;
-    font-weight: 600;
-    align-self: center;
-    margin-top: 0;
-    text-shadow: 1px 2px 1.5px rgba(0, 0, 0, 0.8);
-    position: relative;
-    left: -25%;
-    top: 30%;
-    text-align: left;
-    margin: 20px;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.5);
+    p{
+        font-size: calc(30px + 16 * ((100vw - 320px) / (1580 - 320)));
+        color: GAINSBORO;
+        font-weight: 600;
+        align-self: center;
+        margin-top: 0;
+        text-shadow: 1px 2px 1.5px rgba(0, 0, 0, 0.8);
+        position: relative;
+        left: -25%;
+        top: 30%;
+        text-align: left;
+        margin: 20px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.5);
+    }
 }
 
 /* Style for content */
@@ -87,13 +70,6 @@ body {
     margin: 0;
     padding: 0;
     background: rgba(255, 234, 226, 0.3);
-}
-
-
-
-
-.container.content_container {
-    padding: 0;
 }
 
 .image_link a:link {
@@ -502,15 +478,7 @@ footer {
 
 @media (min-width:1500px) {
     .max {
-        font-size: max(49px);
-    }
-
-    .ind.max {
-        font-size: max(49px);
-    }
-
-    .p3.max {
-        font-size: max(49px);
+        font-size: 49px!important;
     }
 }
 
@@ -540,7 +508,7 @@ footer {
 }
 
 @media (max-width:953px) {
-    .cherga_p {
+    .big_picture_div p {
         left: 0;
     }
 
@@ -563,17 +531,11 @@ footer {
         overflow: hidden;
     }
 
-    .container.big_picture_div {
+    main{
         margin-top: 70px;
-    }
-
-    .big_picture {
-        margin-top: 70px;
-        max-height: 400px;
     }
 
     .big_picture_div {
-        margin-top: 70px;
         height: 400px;
     }
 
@@ -646,11 +608,6 @@ footer {
 }
 
 @media (max-width:540px) {
-    .big_picture {
-        height: 100%;
-        max-height: 350px;
-    }
-
     .big_picture_div {
         height: 350px;
     }

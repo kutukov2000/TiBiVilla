@@ -276,20 +276,6 @@ hr {
         overflow: hidden;
     }
 
-    .container.big_picture_div {
-        margin-top: 70px;
-    }
-
-    .big_picture {
-        margin-top: 70px;
-        max-height: 400px;
-    }
-
-    .big_picture_div {
-        margin-top: 70px;
-        height: 400px;
-    }
-
     .relative {
         height: 475px;
         flex-direction: column;
