@@ -288,10 +288,6 @@ hr {
     .p1 {
         margin: 40px 0 25px 0;
     }
-
-    .footer__img {
-        display: none;
-    }
 }
 
 @media(max-width:682px) {

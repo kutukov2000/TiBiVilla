@@ -35,9 +35,6 @@ main {
     width: 100%;
     margin: auto;
     margin-top: 110px;
-    position: absolute;
-    left: 0;
-    right: 0;
 }
 
 .big_picture_div {
@@ -175,79 +172,15 @@ main {
     margin-bottom: 15px;
 }
 
-
-/*      Style for footer    */
 .maps_fullscreen {
 
     width: 100%;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: black;
-    font-family: sans-serif;
-}
-
-.footer {
-    width: 100%;
-    height: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    color: #C8C3C1;
-}
-
-.mail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.mail img {
-    width: 50px;
-    height: 40px;
-    margin-right: 15px;
-}
-
-.mail p {
-    margin: 0;
-}
-
-.contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.contact img {
-    width: 45px;
-    height: 45px;
-    margin-right: 15px;
-}
-
-.footer__logo {
-    max-height: 100px;
-    width: 166.66px;
-}
-
-.footer__div {
-    display: none;
 }
 
 .container.z372__div {
     padding-top: 110px;
 }
 
-#footer__logo {
-    width: 166.66px;
-}
-
-/* MEDIA */
 .first__cherga {
     width: 15%;
     height: 20%;
@@ -350,55 +283,12 @@ footer {
     .p1 {
         margin: 40px 0 25px 0;
     }
-
-    .footer__img {
-        display: none;
-    }
 }
 
 @media (max-width:588px) {
-    .contact_ {
-        display: block;
-    }
-
     .container {
         padding-left: 5px;
         padding-right: 5px;
-    }
-
-    .mail {
-        display: none;
-    }
-
-    .contact {
-        display: none;
-    }
-
-    .footer__div {
-        display: flex;
-        flex-direction: column;
-        font-size: calc(14px + 16 * ((100vw - 320px) / (1580 - 320)));
-    }
-
-    .footer__div p {
-        margin: 0;
-    }
-
-    footer {
-        justify-content: space-between;
-    }
-
-    .footer {
-        height: 65px;
-    }
-
-    .footer__logo {
-        max-height: 65px;
-        width: 100px
-    }
-
-    #footer__logo {
-        width: 100px;
     }
 }
 
