@@ -101,25 +101,141 @@ main {
     }
 }
 
-.p1 {
+h2 {
     text-align: center;
     font-size: calc(45px + 16 * ((100vw - 320px) / (1580 - 320)));
     font-family: Yanone;
 }
 
-.our-project {
+.our_projects {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+
+    .houses {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        font-family: Yanone;
+        width: 100%;
+
+        font-size: 20px;
+
+        img {
+            display: flex;
+            margin: 0;
+        }
+
+        .house {
+            transform: scale(0.9);
+            display: flex;
+            flex-direction: column;
+
+            margin: 0;
+            position: relative;
+            width: 50%;
+            height: 100%;
+
+            .house_image_div {
+                position: relative;
+                text-align: center;
+                color: white;
+                padding: 0;
+                overflow: hidden;
+                padding-bottom: 58%;
+
+                img {
+                    transition: 0.85s;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .button {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    p {
+                        color: white;
+                        opacity: 0;
+                        border: 2px solid rgba(255, 255, 255, 0);
+                        transition: 0.85s;
+                        padding: 20px 50px;
+                        font-size: 40px;
+                        display: none;
+                    }
+                }
+            }
+
+            .description {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #212F3D;
+                padding: 0 15px;
+
+                >p {
+                    color: #FFF;
+                    font-family: Yanone;
+                    font-weight: 900;
+                    font-size: calc(21px + 16 * ((100vw - 320px) / (1500 - 320)));
+                    margin: 0;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+
+                    p {
+                        color: white;
+                    }
+
+                    hr {
+                        background-color: #fff;
+                        border-color: #fff;
+                        width: 1px;
+                        height: 50px;
+                        margin: 0 20px;
+                    }
+
+                    .number {
+                        font-family: Oswald;
+                        font-size: calc(17px + 16 * ((100vw - 320px) / (1580 - 320)));
+                        font-weight: 600;
+                        color: #FFDED8
+                    }
+                }
+            }
+
+            hr {
+                color: #FFC984;
+                border: none;
+                width: 100%;
+                height: 5px;
+                margin: 0;
+            }
+        }
+    }
 }
 
-.our_our {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: auto;
-}
 
 .black {
     background-color: #000000;
@@ -180,7 +296,7 @@ main {
     padding-top: 110px;
 }
 
-.first__cherga {
+.queue {
     width: 15%;
     height: 20%;
     display: flex;
@@ -189,24 +305,24 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #F28291;
+    background-color: #26AB8F;
     border-radius: 100%;
     margin-top: 3px;
     margin-right: 3px;
 
     transition: 0.3s;
+
+    p {
+        text-align: center;
+        color: white;
+        font-size: calc(16px + 16 * ((100vw - 320px) / (1500 - 320)));
+    }
 }
 
-.first__cherga.second {
-    background-color: #26AB8F;
+.first_queue {
+    background-color: #F28291;
 }
 
-.first__cherga p {
-    text-align: center;
-    color: white;
-    font-size: calc(16px + 16 * ((100vw - 320px) / (1500 - 320)));
-
-}
 
 @media (min-width:1500px) {
     .max_font_size {
@@ -275,8 +391,14 @@ main {
         flex-direction: column;
     }
 
-    .our {
+    .houses {
         flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .house {
+        transform: scale(1);
+        width: 90% !important;
     }
 
     .p1 {
@@ -298,7 +420,7 @@ main {
 }
 
 @media(max-width:450px) {
-    .first__cherga {
+    .queue {
         height: 18%;
     }
 }

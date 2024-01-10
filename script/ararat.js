@@ -1,13 +1,13 @@
  //Artur`s scripts
 
 // Katalog images
-let k_img = document.querySelectorAll('.katalog_image');
+let k_img = document.querySelectorAll('.house_image_div img');
 // katalog text "Детальніше"
-let k_p = document.querySelectorAll(".katalog_button");
+let k_p = document.querySelectorAll(".button p");
 //Katalog div
-let container = document.querySelectorAll('.container2')
+let container = document.querySelectorAll('.house_image_div')
 
-let cherga = document.querySelectorAll('.first__cherga');
+let cherga = document.querySelectorAll('.queue');
 let image_zoom1 = document.getElementsByClassName('.clip_path_img_1 image_zoom');
 let image_zoom = document.querySelectorAll('.image_zoom');
 for(let i=0; i<container.length;i++){
