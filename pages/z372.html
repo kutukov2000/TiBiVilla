@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/slider2.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/pages.css"> 
 
     <title>Котедж Z372</title>
 
@@ -17,7 +18,7 @@
     <script src="../script/burger.js"></script>
 </head>
 
-<body class="body">
+<body>
 
     <header>
         <div class="container">
@@ -76,25 +77,21 @@
         </nav>
     </div>
 
-    <!-- Content -->
-    <div class="container z372__div content_container">
+    <main class="container pages_content">
 
-        <div class="z372_house">
-            <div class="z372_house_img">
-
-                <!-- Container for the image gallery -->
-                <div class="container2">
-
+        <div class="house w-100">
+            <div class="house_image_slider">
+                <div class="slider_div">
                     <div class="mySlides">
                         <div class="numbertext">1 / 6</div>
                         <img src="../images/z372.jpg" style="width:100%">
                     </div>
-
+    
                     <div class="mySlides">
                         <div class="numbertext">2 / 6</div>
                         <img src="../images/z372_img1.jpg" style="width:100%">
                     </div>
-
+    
                     <div class="mySlides">
                         <div class="numbertext">3 / 6</div>
                         <img src="../images/z372_img2.jpg" style="width:100%">
@@ -111,14 +108,14 @@
                         <div class="numbertext">6 / 6</div>
                         <img src="../images/z372_img5.jpg" style="width:100%">
                     </div>
-
+    
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    
                     <div class="row">
                         <div class="column margin">
-                            <img class="demo cursor" src="../images/z372.jpg" style="width:100%"
-                                onclick="currentSlide(1)" alt="">
+                            <img class="demo cursor" src="../images/z372.jpg" style="width:100%" onclick="currentSlide(1)"
+                                alt="">
                         </div>
                         <div class="column  margin">
                             <img class="demo cursor" src="../images/z372_img1.jpg" style="width:100%"
@@ -142,59 +139,56 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="description3">
+            <div class="house_description">
                 <div class="name__div">
-                    <p class="z372_house_name">Котедж Z372</p>
+                    <p class="house_name">Котедж Z372</p>
                 </div>
-                <div class="square_div">
+                <div class="specifications">
                     <p>Площа<br>
-                        будинку:<span class="number square">124,2 м²</span></p>
+                        будинку:<span class="number square">124,2 м²</span>
+                    </p>
                     <hr noshade>
                     <p>Розмір<br>
-                        ділянки:<span class="number square">від 200 м²</span></p>
+                        ділянки:<span class="number square">від 200 м²</span>
+                    </p>
                 </div>
-                <div class="big_description">
+                <div class="text_description">
                     Z372 являє собою акуратний двоповерховий будинок, виконаний в модерністському стилі. Усі приміщення
                     в ньому просторі і комфортні. Будинок, побудований за даним проектом, ідеальний для сімей
                     з дітками або літніми домочадцями.
                 </div>
-                <div class="description second__description">
-                    <p class="p2">Котедж Z440</p>
-                    <div class="description2">
-                        <p>Площа будинку: <br><span class="number">124,2 м²</span></p>
-                        <a href="">
-                            <hr noshade class="hr5">
-                        </a>
+                <div class="relative_description">
+                    <p class="house_name">Котедж Z440</p>
+                    <div>
+                        <p>Площа будинку: <br>
+                            <span class="number">124,2 м²</span>
+                        </p>
+                        <hr noshade class="hr5">
                         <p>Розмір ділянки: <br>від 200 м²</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container content_container">
+        <div class="container house_plan">
 
-            <div class="z372_house_plan">
-                <div class="z372_house_plan_imgdiv">
-                    <img class="z372_house_img_plan" src="../images/z372_plan_1.jpg" alt="">
-                    <img class="z372_house_img_plan" src="../images/z372_plan_2.jpg" alt="">
-                </div>
-
-
-                <div class="z372_house_img_plan_description">
-                    <p> ЗАГАЛЬНА ПЛОЩА- 124,2 М2<br>
-                        Площа першого поверху - 71,0 М2<br>
-                        Площа другого поверху - 53,1 М2<br>
-                        Спальні - 4<br>
-                        Санвузли - 2<br>
-                        Ділянка - від 200 M2<br>
-                        Вартість * - ???<br>
-                    </p>
-                </div>
+            <div class="img_div">
+                <img class="plan_image" src="../images/z372_plan_1.jpg" alt="">
+                <img class="plan_image" src="../images/z372_plan_2.jpg" alt="">
+            </div>
+            <div class="plan_description">
+                <p> ЗАГАЛЬНА ПЛОЩА- 124,2 М2<br>
+                    Площа першого поверху - 71,0 М2<br>
+                    Площа другого поверху - 53,1 М2<br>
+                    Спальні - 4<br>
+                    Санвузли - 2<br>
+                    Ділянка - від 200 M2<br>
+                    Вартість * - ???<br>
+                </p>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
         <img src="../images/logo.png" alt="TiBiVilla logo">

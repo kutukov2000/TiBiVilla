@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/slider2.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/pages.css">
 
     <title>Котедж Z230</title>
 
@@ -17,7 +18,7 @@
     <script src="../script/burger.js"></script>
 </head>
 
-<body class="body">
+<body>
 
     <header>
         <div class="container">
@@ -76,25 +77,21 @@
         </nav>
     </div>
 
-    <!-- Content -->
-    <div class="container z372__div content_container">
+    <main class="container pages_content">
 
-        <div class="z372_house">
-            <div class="z372_house_img">
-
-                <!-- Container for the image gallery -->
-                <div class="container2">
-
+        <div class="house w-100">
+            <div class="house_image_slider">
+                <div class="slider_div">
                     <div class="mySlides">
                         <div class="numbertext">1 / 5</div>
                         <img src="../images/z230_img1.jpg" style="width:100%">
                     </div>
-
+    
                     <div class="mySlides">
                         <div class="numbertext">2 / 5</div>
                         <img src="../images/z230_img2.jpg" style="width:100%">
                     </div>
-
+    
                     <div class="mySlides">
                         <div class="numbertext">3 / 5</div>
                         <img src="../images/z230_img3.jpg" style="width:100%">
@@ -107,10 +104,10 @@
                         <div class="numbertext">5 / 5</div>
                         <img src="../images/z230_img5.jpg" style="width:100%">
                     </div>
-
+    
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    
                     <div class="row">
                         <div class="column margin">
                             <img class="demo cursor" src="../images/z230_img1.jpg" style="width:100%"
@@ -134,74 +131,73 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="description3">
-                <div class="name__div">
-                    <p class="z372_house_name">Котедж Z230 </p>
+            <div class="house_description">
+                <div class="house_name">
+                    <p>Котедж Z230 </p>
                 </div>
-                <div class="square_div">
+                <div class="specifications">
                     <p>Площа<br>
                         будинку:<span class="number square">116,6 м²</span></p>
                     <hr noshade>
                     <p>Розмір<br>
                         ділянки:<span class="number square">від 200 м²</span></p>
                 </div>
-                <div class="big_description">
+                <div class="text_description">
                     Z230 являє собою акуратний будинок, виконаний в модерністському стилі. Усі приміщення в ньому
                     просторі і комфортні. Будинок, побудований за даним проектом, ідеальний для сімей
                     з дітками або літніми домочадцями.
                 </div>
-                <div class="description second__description">
-                    <p class="p2">Котедж Z230</p>
-                    <div class="description2">
-                        <p>Площа будинку<br><span class="number">116,6 м²</span></p>
-                        <a href="">
-                            <hr noshade class="hr5">
-                        </a>
-                        <p>Розмір ділянки<br><span class="number">від</span> 200 м²</p>
+                <div class="relative_description">
+                    <p class="house_name">Котедж Z230</p>
+                    <div>
+                        <p>
+                            Площа будинку<br>
+                            <span class="number">116,6 м²</span>
+                        </p>
+                        <hr noshade class="hr5">
+                        <p>
+                            Розмір ділянки:<br>
+                            <span class="number">від 200 м²</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container content_container">
-            <div class="z372_house_plan">
-                <div class="z372_house_plan_imgdiv">
-                    <img class="z372_house_img_plan" src="../images/z230_plan.jpg" id="z151__id" alt="">
-
-                </div>
-
-                <div class="z372_house_img_plan_description">
-                    <p> ЗАГАЛЬНА ПЛОЩА - 116,6 М2<br>
-                        Площа першого поверху - 116.6 М2<br>
-                        Спальні - 3<br>
-                        Санвузли - 3<br>
-                        Ділянка - від 200 M2<br>
-                        Вартість * - ???<br>
-                    </p>
-                </div>
+        <div class="container house_plan">
+            <div class="img_div">
+                <img class="plan_image w-100" src="../images/z230_plan.jpg" alt="">
+            </div>
+            <div class="plan_description">
+                <p> ЗАГАЛЬНА ПЛОЩА - 116,6 М2<br>
+                    Площа першого поверху - 116.6 М2<br>
+                    Спальні - 3<br>
+                    Санвузли - 3<br>
+                    Ділянка - від 200 M2<br>
+                    Вартість * - ???<br>
+                </p>
             </div>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <img src="../images/logo.png" alt="TiBiVilla logo">
-        <div>
-            <img src="../images/mail2.png" alt="Main icon">
-            <p>tibivilla.tarasivka@gmail.com</p>
-        </div>
-        <div>
-            <img src="../images/phone2.png" alt="Phone icon">
-            <p>+38 096 248 56 13 </p>
-        </div>
-        <div class="responsive-contact-info">
-            <p>tibivilla.tarasivka@gmail.com</p>
-            <p>+38 096 248 56 13</p>
-        </div>
-    </footer>
+        <footer>
+            <img src="../images/logo.png" alt="TiBiVilla logo">
+            <div>
+                <img src="../images/mail2.png" alt="Main icon">
+                <p>tibivilla.tarasivka@gmail.com</p>
+            </div>
+            <div>
+                <img src="../images/phone2.png" alt="Phone icon">
+                <p>+38 096 248 56 13 </p>
+            </div>
+            <div class="responsive-contact-info">
+                <p>tibivilla.tarasivka@gmail.com</p>
+                <p>+38 096 248 56 13</p>
+            </div>
+        </footer>
 
-    <script src="../script/slider.js"></script>
+        <script src="../script/slider.js"></script>
 </body>
 
 </html>
