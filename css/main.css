@@ -191,6 +191,9 @@ footer {
     .max_font_size {
         font-size: 49px !important;
     }
+    .max_font_size_60{
+        font-size: 60px !important;
+    }
 }
 
 @media (max-width:1500px) {
