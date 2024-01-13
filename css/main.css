@@ -158,13 +158,11 @@ h2 {
                     transform: translate(-50%, -50%);
 
                     p {
+                        display: none;
                         color: white;
-                        opacity: 0;
-                        border: 2px solid rgba(255, 255, 255, 0);
-                        transition: 0.85s;
+                        border: 2px solid rgba(255, 255, 255, 1);
                         padding: 20px 50px;
                         font-size: 40px;
-                        display: none;
                     }
                 }
             }
