@@ -185,6 +185,10 @@ var slideShow = (function () {
   }
 }());
 
+slideShow('.slider', {
+  isAutoplay: true
+});
+
 // Houses-slider
 
 var slideIndex = 1;
