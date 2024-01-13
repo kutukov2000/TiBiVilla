@@ -14,17 +14,178 @@ body {
     background: rgba(255, 234, 226, 0.3);
 }
 
+main {
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}
+
 .container {
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
 }
 
-main {
-    max-width: 1500px;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
     width: 100%;
-    margin: auto;
+    padding: 5px 0;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        /* Contact div, that shown when shown burger */
+        >div {
+            z-index: 2;
+            display: flex;
+            margin-right: 20px;
+        }
+    }
 }
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+        z-index: 2;
+
+        font-family: Yanone;
+        font-size: 25px;
+        letter-spacing: 1.5px;
+
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            margin-left: 20px;
+            color: #C8C3C1;
+            text-decoration: none;
+            transition: 0.5s;
+
+        }
+
+        li:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.header__logo {
+    position: relative;
+    z-index: 3;
+
+    img {
+        max-height: 100px;
+    }
+}
+
+.burger {
+    display: none;
+}
+
+.contact_in_burger {
+    display: none;
+
+    hr {
+        width: 100%;
+    }
+}
+
+.phone_number_in_burber {
+    font-family: 'Oswald';
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.header_contact {
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    margin-right: 20px;
+
+    p {
+        color: white;
+        margin: 0;
+        font-size: 18px;
+        font-family: 'Oswald';
+        letter-spacing: 0.7px;
+    }
+}
+
+#now {
+    text-decoration: underline;
+}
+
+nav.bottom {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: black;
+    font-family: sans-serif;
+
+    width: 100%;
+    max-width: 1500px;
+
+    margin: auto;
+    padding: 5px;
+
+    color: #C8C3C1;
+
+    /* Logo image */
+    >img {
+        max-height: 60px;
+    }
+
+    /* Contact divs */
+    div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            height: 35px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .responsive-contact-info {
+        display: none;
+        align-items: flex-end;
+    }
+}
+
 
 @media (min-width:1500px) {
     .max_font_size {
@@ -39,13 +200,204 @@ main {
     }
 }
 
+@media (max-width:1024px) {
+    header>div {
+        height: 80px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.bottom {
+        display: flex;
+
+        height: auto;
+        width: 100%;
+
+        padding: 100px 0 10px 0;
+
+        position: fixed;
+        z-index: 3;
+
+        background-color: #202733;
+    }
+
+    .header__logo img {
+        max-height: 80px;
+    }
+}
 
 @media (max-width:767px) {
+
     body.lock {
         overflow: hidden;
     }
 
     main {
         margin-top: 70px;
+    }
+
+    header>div {
+        height: 60px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header__logo img {
+        max-height: 60px;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+
+        span {
+            position: absolute;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    .burger::before,
+    .burger::after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .burger:before {
+        top: 0;
+    }
+
+    .burger:after {
+        bottom: 0;
+    }
+
+    .burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .burger.active span {
+        transform: scale(0);
+    }
+
+    .contact_in_burger {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333e51;
+        color: white;
+        transition: 0.3s;
+        padding: 0px 10px 20px 0;
+        overflow: auto;
+
+        ul {
+            padding-top: 100px;
+            display: block;
+
+            li {
+                margin-bottom: 20px;
+            }
+
+            li:hover {
+                transform: none;
+            }
+        }
+    }
+
+    nav.active {
+        top: 0;
+        display: flex;
+    }
+
+    .header_contact {
+        display: none;
+    }
+
+    nav.bottom {
+        display: none;
+        padding: 0;
+    }
+
+    .header__hr {
+        height: 50px;
+    }
+
+    footer>div>img {
+        display: none;
+    }
+}
+
+@media (max-width:588px) {
+    .header_contact {
+        display: none;
+    }
+
+    header .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .burger {
+        margin-top: 0;
+    }
+
+    footer {
+        justify-content: space-between;
+        height: 65px;
+
+        /* Contact divs */
+        div {
+            display: none;
+        }
+
+        .responsive-contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: calc(14px + 16 * ((100vw - 320px) / (1580 - 320)));
+        }
+    }
+}
+
+@media (max-width:362px) {
+    .burger {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width:276px) {
+    .header__logo {
+        transform: scale(0.9);
+        position: relative;
+        left: 0;
     }
 }
