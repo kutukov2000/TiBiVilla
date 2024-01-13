@@ -171,10 +171,6 @@ footer {
         align-items: center;
         gap: 10px;
 
-        img {
-            height: 35px;
-        }
-
         p {
             margin: 0;
         }
@@ -351,10 +347,6 @@ footer {
 
     .header__hr {
         height: 50px;
-    }
-
-    footer>div>img {
-        display: none;
     }
 }
 
