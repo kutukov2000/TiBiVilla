@@ -1,10 +1,11 @@
+//House cards script
 let house_image_divs = document.querySelectorAll('.house_image_div')
 let house_images = document.querySelectorAll('.house_image_div img');
 let house_buttons = document.querySelectorAll(".button p");
 let queue = document.querySelectorAll('.queue');
 
 for (let i = 0; i < house_image_divs.length; i++) {
-    
+
     house_image_divs[i].addEventListener('mouseenter', () => showButton(i))
     house_image_divs[i].addEventListener('mouseleave', () => hideButton(i))
 
@@ -23,3 +24,11 @@ function hideButton(index) {
     house_images[index].style.filter = ""
     queue[index].style.opacity = "1"
 }
+
+//Burger menu script
+$(document).ready(function () {
+    $('.burger').click(function (event) {
+        $('.burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock')
+    });
+});
