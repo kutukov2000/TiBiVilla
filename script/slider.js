@@ -188,37 +188,3 @@ var slideShow = (function () {
 slideShow('.slider', {
   isAutoplay: true
 });
-
-// Houses-slider
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(g) {
-  showSlides(slideIndex += g);
-}
-
-// Thumbnail image controls
-function currentSlide(g) {
-  showSlides(slideIndex = g);
-}
-
-function showSlides(g) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  
-  
-  if (g > slides.length) {slideIndex = 1}
-  if (g < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
