@@ -1,10 +1,8 @@
 .post-wrap {
-	max-width: 1120px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	
 }
 .post-wrap ul {
 	padding-left: 7%;
@@ -14,7 +12,7 @@
 	margin-top: 96px;
 	
 	cursor: pointer;
-	height: 250px;
+	height: 20vw;
 }
 .post-item * {
 	transition: .3s linear;
@@ -62,7 +60,7 @@
 }
 .item-body {
 	color: #F5E2CD;
-	font-size: 14px;
+	font-size: 1.5vw;
 }
 .item-body h3 {
 	font-weight: 500;
@@ -71,47 +69,6 @@
 }
 .item-body p {
 	transition-delay: .1s;
-}
-.item-footer {
-	padding-top: 15px;
-}
-.link {  
-	text-decoration: none;	
-    display: inline-block; 
-	overflow: hidden;	
-	position: relative;
-	padding-right: 30px;
-	font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #F5E2CD;
-}
-.link:before {    
-    content: "";
-    position: absolute;
-    top: 0;
-	left: 0;
-    width: 100%;
-	bottom: 0;
-    height: .125rem;
-	margin: auto;
-	background: #F09EA3;
-    transform: scaleX(.2);
-    transform-origin: left center;
-    z-index: 0;
-	transition: .6s cubic-bezier(.6, .01, 0, 1);
-}
-.link span {
-	display: inline-block;
-    position: relative;
-    transform: translateX(-200%);    
-    transition: .6s cubic-bezier(.6, .01, 0, 1);
-}
-.post-item:hover .link span {
-    transform: translateX(0%);
-}
-.post-item:hover .link:before {
-	transform-origin: right center;
 }
 @media (min-width: 768px) {
 	.post-item {

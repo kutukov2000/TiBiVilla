@@ -9,21 +9,26 @@
 }
 
 body {
+    width: 100vw;
+    max-width: 100%;
+
     margin: 0;
-    padding: 0;
+
     background: rgba(255, 234, 226, 0.3);
 }
 
 main {
-    max-width: 1500px;
     width: 100%;
-    margin: auto;
 }
 
-.container {
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
+main {
+    margin-top: 10vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5vw;
+    font-family: Yanone;
 }
 
 header {
@@ -33,24 +38,26 @@ header {
     z-index: 50;
 
     width: 100%;
-    padding: 5px 0;
 
     background-color: black;
 
     display: flex;
     justify-content: center;
 
+    font-size: 1vw;
+
     >div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
+
+        width: 100%;
+        padding: .25vh 2vh;
 
         /* Contact div, that shown when shown burger */
         >div {
             z-index: 2;
             display: flex;
-            margin-right: 20px;
         }
     }
 }
@@ -59,12 +66,13 @@ nav {
     ul {
         display: flex;
         justify-content: space-between;
+        gap: 1.25vw;
 
         position: relative;
         z-index: 2;
 
         font-family: Yanone;
-        font-size: 25px;
+        font-size: 1.5vw;
         letter-spacing: 1.5px;
 
         margin: 0;
@@ -72,11 +80,8 @@ nav {
 
         li {
             list-style: none;
-            margin-left: 20px;
             color: #C8C3C1;
-            text-decoration: none;
             transition: 0.5s;
-
         }
 
         li:hover {
@@ -95,7 +100,7 @@ nav {
     z-index: 3;
 
     img {
-        max-height: 100px;
+        height: 10vh;
     }
 }
 
@@ -114,7 +119,6 @@ nav {
 .phone_number_in_burber {
     font-family: 'Oswald';
     font-weight: 800;
-    font-size: 24px;
 }
 
 .header_contact {
@@ -123,16 +127,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-
-    margin-right: 20px;
+    gap: 0.5vw;
 
     p {
         color: white;
-        margin: 0;
-        font-size: 18px;
+        font-size: 1vw;
         font-family: 'Oswald';
         letter-spacing: 0.7px;
+        margin: 0;
     }
 }
 
@@ -153,23 +155,26 @@ footer {
     font-family: sans-serif;
 
     width: 100%;
-    max-width: 1500px;
+    height: 9vh;
 
-    margin: auto;
-    padding: 5px;
+    font-size: 1.25vw;
 
     color: #C8C3C1;
 
     /* Logo image */
-    >img {
-        max-height: 60px;
+    img {
+        height: 100%;
     }
 
     /* Contact divs */
     div {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.75vw;
+
+        svg {
+            width: 1.5vw;
+        }
 
         p {
             margin: 0;
@@ -182,26 +187,17 @@ footer {
     }
 }
 
-
-@media (min-width:1500px) {
-    .max_font_size {
-        font-size: 49px !important;
-    }
-    .max_font_size_60{
-        font-size: 60px !important;
-    }
-}
-
 @media (max-width:1500px) {
-    .container {
-        max-width: 100%;
-        width: 100%;
+    .header_contact p {
+        font-size: 1.25vw;
     }
 }
 
 @media (max-width:1024px) {
-    header>div {
-        height: 80px;
+
+    main {
+        margin: 0;
+        padding-top: 16vh;
     }
 
     nav {
@@ -214,7 +210,7 @@ footer {
         height: auto;
         width: 100%;
 
-        padding: 100px 0 10px 0;
+        padding: 13vh 0 2vh 1vw;
 
         position: fixed;
         z-index: 3;
@@ -222,8 +218,8 @@ footer {
         background-color: #202733;
     }
 
-    .header__logo img {
-        max-height: 80px;
+    footer {
+        font-size: 1.5vw;
     }
 }
 
@@ -234,19 +230,33 @@ footer {
     }
 
     main {
-        margin-top: 70px;
+        margin-top: 10vh;
+        padding: 0;
     }
 
-    header>div {
-        height: 60px;
+    h2 {
+        font-size: 7vw;
     }
 
     nav {
         display: none;
     }
 
-    .header__logo img {
-        max-height: 60px;
+    .header__menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+
+        width: 100%;
+        height: fit-content;
+        font-size: 5vw;
+
+        padding-top: 10vh;
+
+        hr {
+            width: 100vw;
+        }
     }
 
     .burger {
@@ -302,7 +312,14 @@ footer {
     }
 
     .contact_in_burger {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
     }
 
     nav {
@@ -316,19 +333,6 @@ footer {
         transition: 0.3s;
         padding: 0px 10px 20px 0;
         overflow: auto;
-
-        ul {
-            padding-top: 100px;
-            display: block;
-
-            li {
-                margin-bottom: 20px;
-            }
-
-            li:hover {
-                transform: none;
-            }
-        }
     }
 
     nav.active {
@@ -345,8 +349,8 @@ footer {
         padding: 0;
     }
 
-    .header__hr {
-        height: 50px;
+    footer {
+        font-size: 2vw;
     }
 }
 
@@ -355,20 +359,13 @@ footer {
         display: none;
     }
 
-    header .container {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
     .burger {
         margin-top: 0;
     }
 
     footer {
         justify-content: space-between;
-        height: 65px;
 
-        /* Contact divs */
         div {
             display: none;
         }
@@ -376,23 +373,15 @@ footer {
         .responsive-contact-info {
             display: flex;
             flex-direction: column;
-            gap: 5px;
-            font-size: calc(14px + 16 * ((100vw - 320px) / (1580 - 320)));
+            gap: 0.75vw;
+
+            font-size: 3vw;
         }
     }
 }
 
-@media (max-width:362px) {
-    .burger {
-        margin-left: 20px;
-        margin-top: 0;
-    }
-}
-
-@media (max-width:276px) {
-    .header__logo {
-        transform: scale(0.9);
-        position: relative;
-        left: 0;
+@media (max-width: 447px) {
+    .header__menu ul {
+        font-size: 7.5vw;
     }
 }

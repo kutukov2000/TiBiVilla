@@ -15,14 +15,14 @@ body {
 
     justify-content: space-between;
     align-items: center;
+
     background-color: #212F3D;
-    padding: 0 15px;
 
     .house_name {
         color: #FFF;
         font-family: Yanone;
         font-weight: 900;
-        font-size: calc(21px + 16 * ((100vw - 320px) / (1500 - 320)));
+        font-size: 5vw;
         margin: 0;
     }
 
@@ -30,8 +30,11 @@ body {
         display: flex;
         justify-content: left;
         align-items: center;
+        gap: 2vw;
 
         p {
+            font-family: Yanone;
+            font-size: 3vw;
             color: white;
         }
 
@@ -45,7 +48,6 @@ body {
             border-color: #fff;
             width: 1px;
             height: 50px;
-            margin: 0 20px;
             transition: 0.7s;
         }
     }
@@ -53,43 +55,58 @@ body {
 
 .number {
     font-family: Oswald;
-    font-size: calc(17px + 16 * ((100vw - 320px) / (1580 - 320)));
+    font-size: 2vw;
     font-weight: 600;
     color: #FFDED8
 }
 
-.house_image_slider>div {
-    /* Must be relative for slider arrows */
-    position: relative;
-    overflow: hidden;
+.house_image_slider {
+    width: 75%;
 
-    padding: 0;
+    >div {
+        /* Must be relative for slider arrows */
+        position: relative;
+        /* overflow: hidden; */
 
-    text-align: center;
-    color: white;
+        padding: 0;
+
+        text-align: center;
+        color: white;
+    }
+
+    .mySlides {
+        height: 83vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 .house {
     display: flex;
 }
 
-.mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .house_name {
     font-family: Yanone;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 4vw;
     color: #FFF;
+
+    p {
+        margin-top: 2vh;
+    }
 }
 
 .house_description {
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    gap: 1vw;
+
+    padding: 2vh;
     background-color: #212F3D;
     color: white;
     width: 30%;
@@ -101,12 +118,11 @@ body {
 }
 
 .square {
-    margin-left: 50px;
-    font-size: 30px;
+    margin-left: 3vw;
 }
 
 .specifications {
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Yanone;
 
     hr {
@@ -119,17 +135,18 @@ body {
     text-indent: 5%;
     line-height: 130%;
     letter-spacing: 1.5px;
-    margin-top: 75px;
+
+    font-size: 1.5vw;
 }
 
 .house_plan {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 2vw;
 
     width: 100%;
-    padding: 50px;
+    padding: 2vw;
 
     background-color: #fff;
 }
@@ -138,6 +155,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: 50%;
 }
 
 .plan_image {
@@ -155,22 +174,14 @@ body {
     width: 50%;
 
     font-family: Yanone;
-    font-weight: normal;
-    font-size: 25px;
 
     p {
         font-family: Oswald;
-        font-size: calc(23px + 16 * ((100vw - 630px) / (1500 - 632)));
+        font-size: 2.5vw;
         font-weight: 900;
         letter-spacing: 0.05em;
         white-space: nowrap;
         color: #000000;
-    }
-}
-
-@media(max-width:1219px) {
-    .house_description {
-        padding: 0 10px 0 15px;
     }
 }
 
@@ -214,17 +225,20 @@ body {
         display: flex;
     }
 
-    .text_description {
-        margin-bottom: 15px;
-    }
-
     .relative_description .house_name {
         display: flex;
-        font-size: calc(25px + 16 * ((100vw - 320px) / (1500 - 320)));
+    }
+
+    .number {
+        font-size: 4vw;
     }
 }
 
 @media(max-width:741px) {
+    .text_description {
+        font-size: 2.5vw;
+    }
+
     .house_plan {
         flex-direction: column-reverse;
 
@@ -242,7 +256,22 @@ body {
     .plan_description {
         width: 100%;
         justify-content: center;
+
+        p {
+            font-size: 4vw !important;
+        }
     }
+
+    .number {
+        font-size: 5vw;
+    }
+}
+
+@media(max-width:588px) {
+    .mySlides {
+        height: 65vh !important;
+    }
+
 }
 
 @media(max-width:350px) {
@@ -250,8 +279,14 @@ body {
         flex-direction: column;
     }
 
+    .house_name {
+        font-size: 10vw;
+    }
+
     .specifications {
         display: block;
+
+        font-size: 5vw;
 
         p {
             margin: 0;
@@ -260,10 +295,6 @@ body {
 
     .house_name {
         display: block;
-
-        p {
-            margin-top: 10px;
-        }
     }
 
     .relative_description {
@@ -272,5 +303,14 @@ body {
 
     .text_description {
         margin-top: 15px;
+    }
+
+    .plan_description {
+        width: 100%;
+        justify-content: center;
+
+        p {
+            font-size: 5vw !important;
+        }
     }
 }

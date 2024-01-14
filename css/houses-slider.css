@@ -9,7 +9,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
-  height: 820px;
+  height: 100%;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -111,8 +111,6 @@
   margin-right: 15px;
 }
 
-
-
 @media(max-width:1241px) {
   .row {
     height: 100px;
@@ -121,18 +119,8 @@
 }
 
 @media(max-width:1024px) {
-  .mySlides {
-    height: 600px;
-  }
-
   .row {
     height: 90px;
-  }
-}
-
-@media(max-width:968px) {
-  .mySlides {
-    height: 500px;
   }
 }
 

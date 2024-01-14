@@ -2,83 +2,73 @@
     background-color: black;
 }
 
-.pages_content {
-    padding-top: 110px;
-    width: 100%;
-}
-
 .gallery {
     display: flex;
     justify-content: center;
-
     flex-wrap: wrap;
+    gap: 1vh;
 
     width: 100%;
+
+    img {
+        width: 40%;
+    }
 }
 
 .service {
-    padding-top: 110px;
     background-color: #fff;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.service_department {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 80%;
-
-    img {
-        width: 50%;
-    }
-
-    h2 {
-        font-size: calc(35px + 16 * ((100vw - 320px) / (1500 - 320)));
-    }
-
-    p {
-        font-size: calc(21px + 16 * ((100vw - 320px) / (1500 - 320)));
-    }
-}
-
-.services {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    color: white;
-    background-color: black;
-
-    ul {
+    .service_department {
         display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-        padding: 0;
-        font-size: calc(16px + 16 * ((100vw - 320px) / (1500 - 320)));
-        text-align: center;
+        justify-content: center;
+        align-items: center;
 
-        li {
+        width: 80%;
+        padding-top: 2vh;
+
+        img {
+            width: 50%;
+        }
+
+        p {
+            font-size: calc(1.5vw + 13px);
+        }
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        color: white;
+        background-color: black;
+
+        ul {
             display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            width: 33.33%;
+            flex-wrap: wrap;
+            width: 60%;
+            padding: 0;
+            font-size: calc(1vw + 10px);
+            text-align: center;
 
-            img {
-                width: 33%;
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                width: 33.33%;
+
+                img {
+                    width: 33%;
+                }
             }
         }
     }
-}
-
-.gallery img {
-    width: 40%;
-    margin: 0 10px 10px 0;
 }
 
 hr {
@@ -92,10 +82,10 @@ h1 {
     text-align: center;
 
     font-family: Oswald;
-    font-size: calc(35px + 16 * ((100vw - 320px) / (1500 - 320)));
+    font-size: calc(2vw + 14px);
     font-weight: 600;
 
-    margin: 25px 0;
+    margin: 1.5vw 0;
 }
 
 .infrastructure_wrap {
@@ -108,7 +98,6 @@ h1 {
 
     >div {
         width: 31.33%;
-        height: 466px;
         overflow: hidden;
 
         display: flex;
@@ -119,12 +108,7 @@ h1 {
         box-shadow: 0 0 5px white;
 
         .infrastructure_description {
-            height: 100px;
-        }
-
-        h2 {
-            font-size: 32px;
-            margin: 17px;
+            height: fit-content;
         }
 
         h2,
@@ -134,13 +118,17 @@ h1 {
             letter-spacing: 2px;
         }
 
+        h2 {
+            margin: 17px;
+        }
+
         p {
-            font-size: 20px;
+            font-size: 1.5vw;
             margin-left: 15px;
         }
 
         img {
-            height: 250px;
+            height: 25vw;
             object-fit: cover;
             transition: 0.35s;
         }
@@ -154,7 +142,6 @@ h1 {
     text-align: center;
     width: 25%;
 
-    font-size: 27px;
     transform: scale(0.85);
 
     display: flex;
@@ -162,28 +149,12 @@ h1 {
     align-items: center;
 
     position: relative;
-    top: -73%;
+    top: -45%;
     right: -75%;
 
     p {
         margin: 0 !important;
         font-weight: 600;
-        font-size: 22px;
-    }
-}
-
-
-@media (max-width:1024px) {
-    .distance {
-        font-size: calc(21px + 16 * ((100vw - 320px) / (1500 - 320)));
-    }
-
-    .pages_content {
-        padding-top: 130px;
-    }
-
-    h1 {
-        margin: 15px 0;
     }
 }
 
@@ -193,17 +164,20 @@ h1 {
         overflow: hidden;
     }
 
-    .pages_content {
-        padding-top: 70px;
-    }
-
     .infrastructure_wrap {
         flex-direction: column;
         align-items: center;
 
         >div {
             width: 90%;
-            height: 450px;
+        }
+
+        p {
+            font-size: 3vw !important;
+        }
+
+        img {
+            height: 50vw !important;
         }
     }
 
@@ -237,14 +211,6 @@ h1 {
 
         img {
             width: 90%;
-            margin: 0;
-            margin-bottom: 10px;
         }
-    }
-}
-
-@media(max-width:531px) {
-    h1 {
-        margin: 5px 0;
     }
 }
