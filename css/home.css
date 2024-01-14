@@ -286,6 +286,13 @@
             font-size: 4.5vw !important;
         }
     }
+    
+    .queue{
+        width: 10vw!important;
+        height: 10vw!important;
+
+        font-size: 3vw!important;
+    }
 }
 
 @media(max-width:600px) {
