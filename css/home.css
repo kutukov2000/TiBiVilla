@@ -346,23 +346,21 @@
         align-items: center;
 
         .card_title {
-            flex-direction: row;
+            flex-direction: row!important;
             align-items: center;
-            gap: 2.5vw;
         }
 
         li,
         p {
-            font-size: 2vw !important;
+            font-size: 2.5vw !important;
         }
 
         >div {
             width: 75%;
-            height: 45vh !important;
         }
 
         h4 {
-            font-size: 3vw !important;
+            font-size: 4vw !important;
         }
     }
 }
@@ -395,6 +393,12 @@
 
         h4 {
             font-size: 5.5vw !important;
+        }
+    }
+
+    .our_benefits{
+        li,p{
+            font-size: 3.5vw!important;
         }
     }
 }
