@@ -63,14 +63,12 @@
 
 .row {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
 
   padding: 15px 0;
-  height: 150px;
 }
 
 .row:after {

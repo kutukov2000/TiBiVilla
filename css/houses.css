@@ -63,7 +63,6 @@ body {
     >div {
         /* Must be relative for slider arrows */
         position: relative;
-        /* overflow: hidden; */
 
         padding: 0;
 
@@ -72,8 +71,6 @@ body {
     }
 
     .mySlides {
-        height: 83vh;
-
         img {
             width: 100%;
             height: 100%;
