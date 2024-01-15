@@ -5,9 +5,7 @@
 }
 
 body {
-    background-image: url(../images/bg-home.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed
+    background-color: #212F3D;
 }
 
 .relative_description {
@@ -16,8 +14,6 @@ body {
 
     justify-content: space-between;
     align-items: center;
-
-    background-color: #212F3D;
 
     .house_name {
         color: #FFF;
