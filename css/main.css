@@ -1,11 +1,13 @@
 @font-face {
     font-family: Yanone;
     src: url("../fonts/Yanone.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: Oswald;
     src: url("../fonts/Oswald.ttf");
+    font-display: swap;
 }
 
 body {
