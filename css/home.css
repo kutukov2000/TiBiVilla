@@ -360,7 +360,8 @@
         }
 
         >div {
-            width: 75%;
+            width: 85%;
+            padding: 2vw 4vw;
         }
 
         h4 {
