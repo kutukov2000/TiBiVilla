@@ -224,6 +224,10 @@
 
     color: white;
     background-color: #000000;
+
+    h2{
+        margin: 2vw;
+    }
 }
 
 .our_benefits {
