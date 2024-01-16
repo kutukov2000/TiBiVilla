@@ -46,7 +46,7 @@
         padding-left: 20px;
     }
 
-    h3 {
+    h2 {
         font-size: 3vw;
         font-family: Oswald;
         font-weight: bolder;
@@ -96,7 +96,7 @@
 
             font-size: 2vw;
 
-            h4 {
+            h3 {
                 margin: 0;
                 font-size: 2.5vw;
             }
@@ -309,7 +309,7 @@
 
         font-size: 2vw;
 
-        h3 {
+        h2 {
             font-size: 3.5vw;
         }
     }
@@ -329,7 +329,7 @@
 
         font-size: 3vw !important;
 
-        h4 {
+        h3 {
             font-size: 4.5vw !important;
         }
     }
@@ -373,7 +373,7 @@
     .individual_approach {
         font-size: 2.5vw;
 
-        h3 {
+        h2 {
             font-size: 4vw;
         }
     }
@@ -391,7 +391,7 @@
     .house {
         font-size: 4vw !important;
 
-        h4 {
+        h3 {
             font-size: 5.5vw !important;
         }
     }
@@ -411,7 +411,7 @@
     .individual_approach {
         font-size: 3.5vw;
 
-        h3 {
+        h2 {
             font-size: 5vw;
         }
     }
