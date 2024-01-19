@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+.c-black{
+    color: black;
+}
+
 .gallery {
     display: flex;
     justify-content: center;
@@ -83,7 +87,7 @@ h1 {
 
     font-family: Oswald;
     font-size: calc(2vw + 14px);
-    font-weight: 600;
+    font-weight: 800;
 
     margin: 1.5vw 0;
 }
@@ -92,20 +96,23 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 2vw;
 
     width: 100%;
 
     >div {
-        width: 31.33%;
+        width: 25%;
+        height: 35vw;
         overflow: hidden;
 
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
 
-        border: 1px solid white;
-        box-shadow: 0 0 5px white;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 11px 11px 45px #bebebe,
+            -11px -11px 45px #ffffff;
 
         .infrastructure_description {
             height: fit-content;
@@ -114,24 +121,31 @@ h1 {
         h2,
         p {
             font-family: Oswald;
-            color: #fff;
             letter-spacing: 2px;
         }
 
         h2 {
+            font-size: 3vw;
+            font-weight: 600;
             margin: 17px;
         }
 
         p {
             font-size: 1.5vw;
-            margin-left: 15px;
+            margin: 0 15px;
         }
 
         img {
-            height: 25vw;
+            height: 20vw;
             object-fit: cover;
             transition: 0.35s;
+
+            border-radius: 30px;
         }
+    }
+
+    .mb-45{
+        margin-bottom: 45px;
     }
 }
 
@@ -149,8 +163,8 @@ h1 {
     align-items: center;
 
     position: relative;
-    top: -45%;
-    right: -75%;
+    top: -90%;
+    right: -72%;
 
     p {
         margin: 0 !important;
@@ -158,10 +172,20 @@ h1 {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:1024px){
+    h1{
+        margin-bottom: 11px;
+    }
+}
 
+@media (max-width:767px) {
+    
     body.lock {
         overflow: hidden;
+    }
+
+    h1{
+        font-size: 7vw;
     }
 
     .infrastructure_wrap {
@@ -170,6 +194,7 @@ h1 {
 
         >div {
             width: 90%;
+            height: 87vw;
         }
 
         p {
