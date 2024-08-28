@@ -134,6 +134,20 @@
                         font-size: 2.5vw;
                     }
                 }
+
+                &:hover {
+                    img {
+                        filter: blur(5px) brightness(0.55);
+                    }
+
+                    .button p {
+                        display: block;
+                    }
+
+                    .queue {
+                        opacity: 0;
+                    }
+                }
             }
 
             .description {
@@ -225,7 +239,7 @@
     color: white;
     background-color: #000000;
 
-    h2{
+    h2 {
         margin: 2vw;
     }
 }
@@ -350,7 +364,7 @@
         align-items: center;
 
         .card_title {
-            flex-direction: row!important;
+            flex-direction: row !important;
             align-items: center;
         }
 
@@ -401,9 +415,11 @@
         }
     }
 
-    .our_benefits{
-        li,p{
-            font-size: 3.5vw!important;
+    .our_benefits {
+
+        li,
+        p {
+            font-size: 3.5vw !important;
         }
     }
 }
